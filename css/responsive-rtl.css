@@ -211,6 +211,9 @@
 	.popup-video-block {
 		min-height: 390px;
 	}
+	.case-study-item .case-study-thumb {
+		height: 250px;
+	  }
 	.case-study-item:hover .case-study-thumb .case-study-details {
 		right: 0px;
 	}

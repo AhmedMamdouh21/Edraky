@@ -115,6 +115,13 @@
   background: url(../images/bg/abs-bg4.png), linear-gradient(-45deg, #0E90D5, #3032A2) !important;
 }
 
+.img-fit {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*========================================*/
 /*------------ [_Reset_Styles] -----------*/
 /*========================================*/
@@ -2475,6 +2482,40 @@ select {
   transition-delay: 1000ms;
 }
 
+.home-carousel .content-box .images {
+  position: relative;
+  display: block;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 36px;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 1300ms ease;
+  -moz-transition: all 1300ms ease;
+  -ms-transition: all 1300ms ease;
+  -o-transition: all 1300ms ease;
+  transition: all 1300ms ease;
+}
+
+.home-carousel .active .content-box .images {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 1300ms;
+  -moz-transition-delay: 1300ms;
+  -ms-transition-delay: 1300ms;
+  -o-transition-delay: 1300ms;
+  transition-delay: 1300ms;
+}
+
 .home-carousel .content-box p {
   position: relative;
   display: block;
@@ -2803,6 +2844,7 @@ select {
 
 .feature-thumb {
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .feature-thumb img {
@@ -3911,6 +3953,7 @@ select {
 .case-study-item .case-study-thumb {
   position: relative;
   overflow: hidden;
+  height: 350px;
 }
 .case-study-item .case-study-thumb img {
   width: 100%;
@@ -4031,6 +4074,12 @@ select {
   transform: translateY(-5px);
 }
 
+.service-box .service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 30px auto;
+}
+
 .service-icon span:before {
   font-size: 60px;
   margin-top: 30px;
@@ -4061,7 +4110,7 @@ select {
   transition: all 300ms ease-out 0s;
 }
 
-.service-box:after {
+/* .service-box:after {
   position: absolute;
   background: url(../images/bg/1.jpg);
   height: 100%;
@@ -4077,7 +4126,7 @@ select {
   -ms-transition: all 300ms ease-out 0s;
   -o-transition: all 300ms ease-out 0s;
   transition: all 300ms ease-out 0s;
-}
+} */
 
 .service-box:hover:before, .service-box:hover:after {
   opacity: 1;
