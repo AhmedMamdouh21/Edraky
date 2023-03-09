@@ -153,9 +153,9 @@
   text-shadow: none;
 }
 
-ul li {
+/* ul li {
   display: inline;
-}
+} */
 
 .img-full {
   width: 100%;
@@ -465,9 +465,10 @@ a:hover {
 }
 
 ul, ol {
-  list-style: outside none none;
+  /* list-style: outside none none; */
   margin: 0;
   padding: 0;
+  padding-right: 30px;
 }
 
 img {
