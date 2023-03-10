@@ -171,9 +171,13 @@ ul li {
   width: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+
+}
+
 body {
   direction: rtl;
-
 }
 
 /*========================================*/
