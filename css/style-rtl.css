@@ -153,9 +153,19 @@
   text-shadow: none;
 }
 
-/* ul li {
+ul li {
   display: inline;
-} */
+}
+
+.list_style ul, .list_style ol {
+  display: block;
+  list-style: disc !important;
+  margin-right: 30px;
+}
+
+.list_style ul li, .list_style ol li {
+  display: list-item;
+}
 
 .img-full {
   width: 100%;
@@ -465,10 +475,10 @@ a:hover {
 }
 
 ul, ol {
-  /* list-style: outside none none; */
+  list-style: outside none none;
   margin: 0;
   padding: 0;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 img {
